@@ -39,8 +39,8 @@ import { Button, ToggleSwitch, RadioButton, Checkbox, Dropdown, InputField } fro
 And import the CSS for each component:
 
 ```js
-import 'react-html-elements/button.css';
-import 'react-html-elements/toggle-switch.css';
+import 'react-html-elements/dist/button.css';
+import 'react-html-elements/dist/toggle-switch.css';
 // ...etc
 ```
 
