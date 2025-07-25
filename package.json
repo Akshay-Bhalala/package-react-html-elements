@@ -38,6 +38,10 @@
   ],
   "author": "Akshay Bhalala akshaybhalala@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akshay-Bhalala/package-react-html-elements.git"
+  },
   "description": "A standalone, dependency-free React component library for customizable buttons, toggles, radios, checkboxes, dropdowns, and input fields.",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",

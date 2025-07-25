@@ -1,6 +1,6 @@
 # react-html-elements
 
-A standalone, dependency-free React component library for beautiful, customizable UI controls. Style every component with your own CSS or inline styles—no external libraries required!
+A standalone, dependency-free React component library for beautiful, customizable UI controls. Style every component with your own CSS or inline styles - no external libraries required!
 
 ## ✨ Features
 - **Button**: Multiple variants, fully customizable
