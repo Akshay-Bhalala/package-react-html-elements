@@ -1,0 +1,55 @@
+.rb-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.rb-btn-primary {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+.rb-btn-primary:hover:not(:disabled) {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+.rb-btn-secondary {
+  background: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+}
+.rb-btn-secondary:hover:not(:disabled) {
+  background: #565e64;
+  border-color: #565e64;
+}
+
+.rb-btn-outline {
+  background: #fff;
+  color: #007bff;
+  border-color: #007bff;
+}
+.rb-btn-outline:hover:not(:disabled) {
+  background: #e7f1ff;
+}
+
+.rb-btn-danger {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+.rb-btn-danger:hover:not(:disabled) {
+  background: #a71d2a;
+  border-color: #a71d2a;
+}
+
+.rb-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+} 

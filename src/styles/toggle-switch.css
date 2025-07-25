@@ -1,0 +1,46 @@
+.rb-toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  --rb-toggle-color: #007bff;
+}
+
+.rb-toggle-input {
+  display: none;
+}
+
+.rb-toggle-slider {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  background: #ccc;
+  border-radius: 22px;
+  transition: background 0.2s;
+  box-sizing: border-box;
+}
+
+.rb-toggle-slider::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.rb-toggle-input:checked + .rb-toggle-slider {
+  background: var(--rb-toggle-color, #007bff);
+}
+
+.rb-toggle-input:checked + .rb-toggle-slider::before {
+  transform: translateX(18px);
+}
+
+.rb-toggle-input:disabled + .rb-toggle-slider {
+  opacity: 0.6;
+  cursor: not-allowed;
+} 

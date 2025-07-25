@@ -1,0 +1,26 @@
+.rb-dropdown {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  border: 2px solid var(--rb-dropdown-color, #007bff);
+  background: #fff;
+  color: #333;
+  outline: none;
+  transition: border 0.2s;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.rb-dropdown:focus {
+  border-color: #0056b3;
+}
+
+.rb-dropdown:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rb-dropdown option[disabled][hidden] {
+  display: none;
+} 

@@ -1,0 +1,44 @@
+.rb-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  --rb-radio-color: #007bff;
+  gap: 0.5em;
+}
+
+.rb-radio-input {
+  display: none;
+}
+
+.rb-radio-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--rb-radio-color, #007bff);
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.rb-radio-input:checked + .rb-radio-custom::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background: var(--rb-radio-color, #007bff);
+  border-radius: 50%;
+  display: block;
+}
+
+.rb-radio-input:disabled + .rb-radio-custom {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rb-radio-label {
+  user-select: none;
+  font-size: 1rem;
+} 

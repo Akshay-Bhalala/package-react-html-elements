@@ -1,0 +1,50 @@
+.rb-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  --rb-checkbox-color: #007bff;
+  gap: 0.5em;
+}
+
+.rb-checkbox-input {
+  display: none;
+}
+
+.rb-checkbox-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--rb-checkbox-color, #007bff);
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+  transition: border 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+
+.rb-checkbox-input:checked + .rb-checkbox-custom {
+  background: var(--rb-checkbox-color, #007bff);
+  border-color: var(--rb-checkbox-color, #007bff);
+}
+
+.rb-checkbox-input:checked + .rb-checkbox-custom::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.rb-checkbox-input:disabled + .rb-checkbox-custom {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rb-checkbox-label {
+  user-select: none;
+  font-size: 1rem;
+} 
